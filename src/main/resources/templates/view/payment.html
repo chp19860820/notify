@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <script type=text/javascript src=./js/jquery-3.3.1.min.js></script>
+    <script type=text/javascript src=./js/order.js></script>
+</head>
+<body>
+<div>Test payment</div>
+<button id="btn1">生成订单</button>
+v1:
+<div id="div1"></div>
+v2:
+<div id="div2"></div>
+</body>
+<script language="JavaScript">
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $.ajax({
+                type: "POST",
+                url: "http://test.sunnywx.pw/financeFront/tmriOrderBatchCreate/redirect",
+                contentType: "application/json; charset=utf-8",
+                data: order,
+                dataType: "json",
+                success: function (message) {
+                    console.log(message);
+                },
+                error: function(b){
+                    console.log(b);
+                }
+            });
+            alert("1");
+        });
+    });
+</script>
+</html>

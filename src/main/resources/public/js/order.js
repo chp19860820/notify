@@ -1,0 +1,40 @@
+var order = {
+    "transTime":"2018-05-07 16:00:00",
+    "appName":"CZWSJFPT",
+    "appVersion":"1.0.0",
+    "redirectUrl":"http://96.2.36.236:9999/notify",
+    "notifyUrl":"http://96.2.36.236:9999/notify",
+    "amount":"600.00",
+    "orderNo":"201805070000000009",
+    "orderDate":"2018-05-07 16:01:00",
+    "busCode":"1",
+    "quantity":"1",
+    "comm_para":"test",
+    "payerName":"John",
+    "remark1":"1",
+    "remark2":"2",
+    "remark3":"3",
+    "orderData":[
+        {
+            "districtNO":"600",
+            "unitNO":"143004",
+            "paynoteNO":"610301100107588",
+            "payerName":"john",
+            "pnAmount":"400.00",
+            "pnOverdueAMT":"200.00",
+            "pnOverdueDate":"20180130",
+            "receipttypeNO":"333333",
+            "receiptNO":"ZZ0000000002",
+            "itemNumber":"1",
+            "itemData":[
+                {
+                    "itemNO":"001002003",
+                    "itemName":"fakuan",
+                    "itemUnit":"yuan",
+                    "itemPrice":"200.00",
+                    "itemQuantity":"2",
+                    "itemAmount":"400.00",
+                    "itemOverdueAMT":"200.00"
+                }]
+        }]
+}
